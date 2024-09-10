@@ -1,4 +1,5 @@
 import React from "react";
+import "./header.css";
 
 const nav__links = [
   {
@@ -7,19 +8,23 @@ const nav__links = [
   },
   {
     path: "#about",
-    display: "About",
+    display: "About Us",
   },
   {
     path: "#service",
     display: "Services",
   },
   {
-    path: "#casestudy",
+    path: "#case study",
     display: "Case Study",
   },
   {
     path: "#blog",
     display: "Blog",
+  },
+  {
+    path: "#contact",
+    display: "Contact Us",
   },
 ];
 
@@ -30,12 +35,11 @@ const Header = () => {
         <div className="nav__wrapper">
           <div className="logo">
             <h2>YomIT</h2>
-            <p>Growt with us</p>
           </div>
           {/* =======  Navigation  ====== */}
           <div className="navigation">
             <ul className="menu">
-              {nav__links.map((item, imdex) => (
+              {nav__links.map((item, index) => (
                 <li className="menu__item">
                   <a href={item.path} className="menu__link">
                     {item.display}
