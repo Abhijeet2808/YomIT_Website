@@ -74,6 +74,12 @@ a{
 
 h1,h2{
   color: var(--heading-color);
+  font-size: 2rem;
+}
+
+section{
+  padding: 60px 0px;
+  
 }
 
 .container  {
@@ -82,3 +88,15 @@ h1,h2{
   margin: auto;
 }
 
+.description{
+  color: var(--small-text-color);
+  line-height: 30px;
+  font-size: .9rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
