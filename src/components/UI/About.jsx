@@ -28,7 +28,7 @@ const About = () => {
       <section id="about">
         <div className="container">
             <div className="about__wrapper">
-                <div className="about__content"></div>
+                <div className="about__content">
                     <h6 className='subtitle'>Why choose us</h6>
                     <h2>Specialist in avoiding clients on</h2>
                     <h2 className="highlight">financial challenges</h2>
@@ -43,17 +43,17 @@ const About = () => {
                         {
                             chooseData.map ((item,index)=>(
                             <div className="choose__us-item" key={index}>
-                            <span className="choose__us-icon">
-                                <i class={item.icon}></i>
-                            </span>
-                            <div>
-                            <h4 className="choose__us-title">{item.title}</h4>
-                            <p className="description">{item.desc}</p>
+                                <span className="choose__us-icon">
+                                    <i class={item.icon}></i>
+                                </span>
+                                <div>
+                                    <h4 className="choose__us-title">{item.title}</h4>
+                                    <p className="description">{item.desc}</p>
+                                </div>
                             </div>
-                            </div>
-                            ))
-                        }
+                        ))}
                     </div>
+                </div>
 
                 <div className="about__img">
                     <img src={aboutImg} alt="" />

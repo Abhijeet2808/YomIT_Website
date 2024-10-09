@@ -12,7 +12,12 @@
     padding-top: 40px;
 }
 
+.hero__img img {
+    width: 100%;
+}
+
 .hero__content h2{
+    font-family: "Baskervville", serif;
     font-size: 3rem;
     line-height: 65px;
 }
@@ -35,7 +40,7 @@
 
 .primary__btn, 
 .secondary__btn {
-    padding: 0.8 rem 1.5rem;
+    padding: 0.8 rem 1.5 rem;
     border: none;
     outline: none;
     color: #fff;

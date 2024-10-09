@@ -30,7 +30,8 @@
     rgba(14, 9, 56, 1) 100%
   );
   --testimonial-bg: #1a0f4f;
-  --font-name: "Roboto", sans-serif;
+  /* --font-name: "Roboto", sans-serif; */
+  font-family: "Baskervville", serif;
   --small-text-color: rgba(255, 255, 255, 0.774);
   --icon-bg:#151e4f;
 }
@@ -72,7 +73,8 @@ a{
   color: var(--link-color);
 }
 
-h1,h2{
+h1,
+h2{
   color: var(--heading-color);
   font-size: 2rem;
 }
@@ -99,4 +101,22 @@ section{
   color: var(--primary-color);
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+.light-theme .counter {
+  background: var(--counter-section-bg);
+}
+
+.light-theme .secondary__btn {
+  border: 1px solid var(--primary-color);
+  color: #090238;
+  font-weight: 600;
+}
+
+.light-theme a {
+  font-weight: 500;
+}
+
+.light-theme .team__img {
+  background: #ddd;
 }

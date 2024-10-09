@@ -4,37 +4,41 @@ import "./header.css";
 const nav__links = [
   {
     path: "#home",
-    display: "Home",
+    display: "HOME",
   },
   {
-    path: "#about us",
-    display: "About Us",
+    path: "#about",
+    display: "ABOUT",
   },
   {
     path: "#service",
-    display: "Services",
+    display: "SERVICES",
   },
   {
-    path: "#case study",
-    display: "Case Study",
+    path: "#team",
+    display: "TEAM",
   },
   {
     path: "#blog",
-    display: "Blog",
+    display: "BLOG",
   },
   {
     path: "#contact",
-    display: "Contact Us",
+    display: "CONTACT",
   },
 ];
 
-const Header = () => {
+const Header = ({theme, toggleTheme}) => {
   return (
     <header className="header">
       <div className="container">
         <div className="nav__wrapper">
           <div className="logo">
-            <h2>YomIT</h2>
+            {/* <h2>YomIT</h2> */}
+            <h2>
+              <span className="yom">YOM</span>
+              <span className="it">IT</span>
+            </h2>
           </div>
           {/* =======  Navigation  ====== */}
           <div className="navigation">
@@ -49,9 +53,17 @@ const Header = () => {
             </ul>
           </div>
           {/* =====  light mode ===== */}
-          <div className="light__mode">
-            <span>
-              <i class="ri-sun-line">Light Mode</i>
+          <div className="light__mode" >
+            <span onClick={toggleTheme}>
+              {theme === 'light-theme' ? (
+                <span>
+                  <i class="ri-moon-line"></i>Dark
+                </span> 
+                ) : (
+                  <span>
+                      <i class="ri-sun-line">Light</i>
+                  </span>
+                )}
             </span>
           </div>
         </div>

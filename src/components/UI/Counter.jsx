@@ -7,7 +7,7 @@ const counterData = [
     text: "Clients",
   },
   {
-    number: "350",
+    number: "300",
     text: "Running Projects",
   },
   {

@@ -1,27 +1,36 @@
+import React, {useState,useEffect} from "react";
 import "./App.css";
 
 import Header from "./components/Header/Header";
-<<<<<<< HEAD
 import Hero from "./components/UI/Hero";
 import Services from "./components/UI/Services";
 import About from "./components/UI/About";
-=======
 import Counter from "./components/UI/Counter.jsx";
->>>>>>> 719dbd36cc239dda354ffad6978f0e3fda76d62e
+import Team from "./components/UI/Team.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
+
+  const [theme, setTheme] = useState('')
+
+  const toggleTheme = () => {
+    theme === '' ? setTheme('light-theme') : setTheme('')
+  }
+
+  useEffect(() => {
+    document.body.className = theme
+  },[theme])
   return (
     <>
-      <Header />
-<<<<<<< HEAD
-      <Hero />
+      <Header theme={theme} toggleTheme={toggleTheme} />
+      <Hero theme={theme} />
+      <Counter />
       <Services />
       <About />
+      <Team />
+      <Footer />
     </>
-=======
-      <Counter />
-    </div>
->>>>>>> 719dbd36cc239dda354ffad6978f0e3fda76d62e
+
   );
 }
 
