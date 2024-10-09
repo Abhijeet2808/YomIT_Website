@@ -5,6 +5,7 @@
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
+    column-gap: 2.5rem;
 }
 
 .footer__logo {
@@ -47,4 +48,12 @@
 
 .quick__link-item a:hover {
     color: var(--primary-color);
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.573);
+    margin-top: 40px;
+    text-align: center;
+    font-style: 0.9rem;
+    font-weight: 400;
 }
